@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use SebastianBergmann\LinesOfCode\Counter;
 
 Route::view('/', 'welcome');
+Route::view('/test', 'test');
 
 Route::livewire('/counter', 'counter-component')->middleware('auth');
 
