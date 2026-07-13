@@ -15,7 +15,7 @@
 </head>
 <body class="antialiased font-sans">
 <p>
-    <livewire:counter-component />
+    <livewire:counter-component  :text="['id' => 1, 'text' => 'Some text']"/>
 </p>
 </body>
 </html>
