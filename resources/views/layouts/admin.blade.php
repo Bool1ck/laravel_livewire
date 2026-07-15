@@ -28,6 +28,12 @@
                 </header>
             @endif
             <div>
+                {{ $test1 ?? "Test 1 default" }}
+                <br>
+                {{ $test2 ?? "Test 2 default" }}
+            </div>
+            <hr>
+            <div>
                 <ul>
                     <li><a href="{{route('post.index')}}">Site posts list</a></li>
                     <li><a href="{{route('post.show', [1])}}">Site post id show</a></li>

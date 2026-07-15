@@ -5,7 +5,7 @@ use Livewire\Attributes\Title;
 use Livewire\Component;
 
 new
-#[Layout('layouts.admin')]
+//#[Layout('layouts.admin')]
 class extends Component {
     public $postId;
 
@@ -16,7 +16,9 @@ class extends Component {
 
     public function render()
     {
-        return $this->view()->title("Admin - edit post, id: {$this->postId}");
+        return $this->view()
+            ->title("Admin - edit post, id: {$this->postId}")
+            ->layout('layouts.admin', ['test2' => 'Test 2 param']);
     }
     //
 };

@@ -10,7 +10,8 @@ class extends Component {
     {
         return $this->view()
             ->title('Admin - Custom title')
-            ->layout('layouts.admin');
+            ->layout('layouts.admin')
+            ->layoutData(['test1' => 'test 1 index']);
     }
 };
 ?>
